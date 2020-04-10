@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gaohua.dao.BuildInfoDao">
+   <select id="getIpList" resultType="com.gaohua.model.IpProxy">
+        select ip_address,ip_port from proxy_ipconfig
+    </select>
+</mapper>
